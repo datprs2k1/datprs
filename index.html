@@ -1,1 +1,83 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+</head>
+<body>
+    <form action="process.php" method="post" enctype="multipart/form-data">
+        <center>
+            <table style="border-spacing: 20px 10px">
+                <tr>
+                    <th colspan="2"><center><h3>ĐĂNG KÍ</h3></center></th>
+                </tr>
+                <tr>
+                    <td>Full name</td>
+                    <td>
+                        <input type="text" name="fullname" id="fullname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input type="text" name="username" id="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="password" id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nhập lại password</td>
+                    <td>
+                        <input type="password" name="repassword" id="repassword">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td>
+                        <input type="radio" name="gender" id="gender" value="Nam">Nam
+                        <input type="radio" name="gender" id="gender" value="Nữ">Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ngày sinh</td>
+                    <td>
+                        <input type="date" name="birthday" id="birthday">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td>
+                        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Avatar</td>
+                    <td>
+                        <input type="file" name="fileToUpload" id="fileToUpload">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sở thích</td>
+                    <td>
+                        <input type="checkbox" name="sothich[]" id="sothich[]" value="Xem Phim"> Xem Phim
+                        <input type="checkbox" name="sothich[]" id="sothich[]" value="Web"> Web
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Register">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </form>
+    
+</body>
+</html>
